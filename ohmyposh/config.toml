@@ -1,0 +1,55 @@
+console_title_template = '{{ .Shell }} in {{ .Folder }}'
+version = 4
+final_space = true
+
+[transient_prompt]
+  foreground_templates = [
+    "{{ if gt .Code 0}}red{{ end }}",
+    "{{ if eq .Code 0}}green{{ end }}",
+  ]
+  background = "transparent"
+  template = "➜ "
+
+[secondary_prompt]
+  background = "transparent"
+  foreground = "magenta"
+  template = "➜ "
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+  
+  [[blocks.segments]]
+    type = "path"
+    foreground = "cyan"
+    template = "   {{ if .Segments.Git }}<b>{{ .Segments.Git.RepoName }}</b>{{ if .Segments.Git.RelativeDir }}/{{ .Segments.Git.RelativeDir }}{{ end }}{{ else }}{{ .Path }}{{ end }}"
+  
+  [[blocks.segments]]
+    type = "git"
+    foreground = "blue"
+    template = """
+ <default>on</> \
+{{ .HEAD }} \
+{{ if gt .Working.Modified 0 }}<yellow>~{{ .Working.Modified }}</> {{ end }}\
+{{ if gt .Working.Untracked 0 }}<green>?{{ .Working.Untracked }}</>{{ end }}\
+"""
+    [blocks.segments.properties]
+      branch_icon = " "
+      fetch_status = true
+      fetch_upstream_icon = true
+
+  [[blocks.segments]]
+    type = "status"
+    foreground = "red"
+    template = " <default>returned</>  {{ .String }}"
+
+[[blocks]]
+  type = "prompt"
+  alignment = "left"
+  newline = true
+
+  [[blocks.segments]]
+    type = "text"
+    foreground = "magenta"
+    template = " <b>➜</>"

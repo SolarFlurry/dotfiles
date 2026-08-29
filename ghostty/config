@@ -1,0 +1,39 @@
+theme = Catppuccin Macchiato
+font-family = JetBrainsMono Nerd Font
+font-style = ExtraLight
+font-style-italic = ExtraLight Italic
+font-style-bold = Medium
+font-style-bold-italic = Medium Italic
+font-size = 12
+font-feature = +zero
+
+title = " "
+macos-titlebar-proxy-icon = hidden
+
+macos-titlebar-style = hidden
+macos-window-buttons = visible
+macos-icon = official
+
+custom-shader = ./shaders/blaze.glsl
+
+confirm-close-surface = false
+
+mouse-hide-while-typing = true
+
+window-width = 208
+window-height = 57
+
+window-padding-x = 4
+window-padding-y = 10,0
+window-padding-color = extend
+
+cursor-style = underline
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+background-opacity = 0.9
+background-opacity-cells = true
+background-blur = 100
+
+# keybinds
+config-file = keybinds.conf
