@@ -57,7 +57,7 @@ vim.opt.fillchars = { eob = " " }
 
 vim.keymap.set('n', "<Leader>w", "<Cmd>BufferClose!<CR>", { silent = true })
 vim.keymap.set('n', "<Leader>n", "<Cmd>BufferNext<CR>", { silent = true })
-vim.keymap.set('n', "<Leader>t", "<Cmd>terminal<CR>i", { silent = true })
+-- vim.keymap.set('n', "<Leader>t", "<Cmd>terminal<CR>i", { silent = true })
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'Telescope find files' })
