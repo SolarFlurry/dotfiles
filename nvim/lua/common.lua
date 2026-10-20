@@ -47,11 +47,7 @@ vim.opt.cursorline = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.keymap.set('i', 'fj', '<Esc>')
-vim.keymap.set('i', 'jf', '<Esc>')
-
-vim.keymap.set('t', 'fj', '<C-\\><C-n>')
-vim.keymap.set('t', 'jf', '<C-\\><C-n>')
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
 
 vim.opt.fileformat = "unix"
 
