@@ -61,19 +61,21 @@ require("catppuccin").setup({
     custom_highlights = function(colors)
         return {
             Normal = { bg = "none" },
+            NormalNC = { bg = "none" },
+            MsgArea = { bg = colors.mantle },
 
             ["@string.special.symbol.mcfunction"] = { fg = colors.red },
             ["@property.mcfunction"] = { fg = colors.sky },
             ["@string.special.path.mcfunction"] = { fg = colors.red },
             ["@variable.parameter"] = { style = { "italic" } },
             
-            ["NvimTreeGitIgnored"] = { fg = colors.overlay0 },
-            ["CursorLineNr"] = { fg = colors.subtext0 },
-            ["LineNr"] = { fg = colors.overlay1 },
-            ["LspInlayHint"] = { style = { "italic" }},
+            NvimTreeGitIgnored = { fg = colors.overlay0 },
+            CursorLineNr = { fg = colors.subtext0 },
+            LineNr = { fg = colors.overlay1 },
+            LspInlayHint = { style = { "italic" }},
 
-            ["WinBar"] = { fg = colors.subtext1 },
-            ["TinyCmdlineNormal"] = { bg = colors.mantle },
+            WinBar = { fg = colors.subtext1 },
+            TinyCmdlineNormal = { bg = colors.mantle },
 
             IblIndent = { fg = colors.surface1 },
             IblScopeHighlight = { fg = colors.overlay1 },

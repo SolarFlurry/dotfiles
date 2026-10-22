@@ -7,7 +7,7 @@ vim.pack.add ({
     { src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
     { src = "https://github.com/nvim-treesitter/nvim-treesitter", version = 'main' },
     "https://github.com/kyazdani42/nvim-web-devicons",
-    "https://github.com/romgrk/barbar.nvim", -- tab bar
+    -- "https://github.com/romgrk/barbar.nvim", -- tab bar
     "https://github.com/nvim-lualine/lualine.nvim", -- statusline
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/windwp/nvim-autopairs",
@@ -21,18 +21,18 @@ vim.pack.add ({
     "https://github.com/petertriho/nvim-scrollbar",
     "https://github.com/hiphish/rainbow-delimiters.nvim",
     "https://github.com/MeanderingProgrammer/render-markdown.nvim",
-    "https://github.com/sindrets/diffview.nvim",
+    -- "https://github.com/sindrets/diffview.nvim",
     "https://github.com/neogitorg/neogit",
     "https://github.com/lukas-reineke/indent-blankline.nvim",
     "https://github.com/b0o/incline.nvim",
-    "https://github.com/rachartier/tiny-cmdline.nvim",
+    -- "https://github.com/rachartier/tiny-cmdline.nvim",
     "https://github.com/stevearc/oil.nvim",
 })
 
 require('render-markdown').setup({})
 
 require"common"
-require"plugins.barbar_tabs"
+-- require"plugins.barbar_tabs"
 require"plugins.lua_line"
 require"treesitter"
 require"theme"

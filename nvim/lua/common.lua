@@ -53,6 +53,8 @@ vim.opt.fileformat = "unix"
 
 vim.g.mapleader = " "
 
+vim.lsp.inlay_hint.enable(false)
+
 vim.opt.fillchars = { eob = " " }
 
 vim.keymap.set('n', "<Leader>w", "<Cmd>BufferClose!<CR>", { silent = true })

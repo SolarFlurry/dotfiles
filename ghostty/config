@@ -14,7 +14,7 @@ macos-titlebar-style = hidden
 macos-window-buttons = visible
 macos-icon = official
 
-custom-shader = ./shaders/blaze.glsl
+# custom-shader = ./shaders/blaze.glsl
 
 confirm-close-surface = false
 
@@ -33,6 +33,8 @@ shell-integration-features = no-cursor
 
 background-opacity = 0.9
 background-blur = 100
+
+command = ~/.local/bin/tmux new-session -A -s main
 
 # keybinds
 config-file = keybinds.conf
