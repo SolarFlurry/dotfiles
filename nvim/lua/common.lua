@@ -65,6 +65,7 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>G', builtin.lsp_document_symbols, { desc = 'Telescope find symbols' })
 vim.keymap.set('n', '<leader>g', builtin.live_grep, { desc = 'Telescope live grep' })
+vim.keymap.set('n', '<leader>F', builtin.buffers, { desc = 'Telescope buffers' })
 
 -- split operations
 vim.keymap.set('n', '<leader>ss', "<cmd>sp<cr>", { silent = true })
