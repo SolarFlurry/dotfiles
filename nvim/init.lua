@@ -18,7 +18,7 @@ vim.pack.add ({
     "https://github.com/nvim-telescope/telescope-fzf-native.nvim",
     "https://github.com/lewis6991/gitsigns.nvim",
     "https://github.com/ray-x/lsp_signature.nvim",
-    "https://github.com/petertriho/nvim-scrollbar",
+    { src = "https://github.com/petertriho/nvim-scrollbar", version = "refactor/v2" },
     "https://github.com/hiphish/rainbow-delimiters.nvim",
     "https://github.com/MeanderingProgrammer/render-markdown.nvim",
     -- "https://github.com/sindrets/diffview.nvim",
